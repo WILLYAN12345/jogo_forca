@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name"viewport" content"width=device-width,initial-scale=1.0">
+    <title>Jogo da Força Simples</title>
+    <style>
+        body font-family: Arial, sans serif; text-align: center; margin-top: 50px; 
+       .word  font-size: 24px; Letter-spacing: 5px; }
+       .message { color: red; margin-top:20px; }
+       </style>
+    </head>
+    <body>
+        <h1>Jogo da forca</h1>
+
+        <div class="word" id "word">_ _ _ _ _</div>
+
+        <p>Tentativas: <span id="tries">6</span></p>
+
+        <input id="input" type="text" maxlength="1" />
+
+        <button onclick=""play()">Chutar</button>
+
+        <p class="message" id=" id="message"></p>
+
+        <srcipt>
+            const word = "MAÇA", display = Array(word.length).fill("_"), tries = <documents class="getElementByld("tries");
+
+            function play() {
+
+                let input = document.getElementByld("input").value.toUpperCase();
+
+                document.getElementByld("input").value = "";
+
+                if (!input || display.includes (input) || tries.innerText == 0) return;
+
+                if (word.includes(input)) word.split("").forEach(1, i) => { if (1 === input) display [i] = i });
+
+                else tries.innerText--;
+
+                document.getElementByld("word")>innerText = display.join(" ");
+
+                document.getElementByld("message").innerText = display.includes(" ") ? (tries.innerText == 0 ? "Você perdeu!") : "") : "Você venceu!";
+            }
+        </script>
+    </body>
+    </html>
